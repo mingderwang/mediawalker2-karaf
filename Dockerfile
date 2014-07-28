@@ -17,10 +17,9 @@ EXPOSE 8181
 #EXPOSE 1099 8101 44444 8181
 
 RUN echo "==========================================================================================================================="
-RUN echo "Usage: docker run -it -p 8181:8181 -v `pwd`:/mediawalker2/deploy -w /mediawalker2/deploy mingderwang/mediawalker2-karaf sh"
-RUN echo "wait for a couple minutes, and then surf http://<host ip>:8181/hawtio"
+RUN echo "Usage: docker run -it -p 8181:8181 -v /mediawalker2/deploy -v `pwd`:/mediawalker2/data -w /mediawalker2/deploy mingderwang/mediawalker2-karaf"
+RUN echo "wait for a couple minutes, and then surf http://<ip address>:8181/hawtio"
 RUN echo "login username: karaf, password: karaf."
-RUN echo "You can deploy any OSGi bundles to your current directory, it will automatically install to mediawalker2 container."
 RUN echo "==========================================================================================================================="
 ENTRYPOINT ["/mediawalker2/bin/karaf"]
 
