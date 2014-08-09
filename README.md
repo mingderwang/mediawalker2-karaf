@@ -7,6 +7,9 @@ docker run -it -p 8181:8181 \
        mingderwang/mediawalker2-karaf
 </pre>
 
+then, you can surf http://192.168.59.103:8181/hawtio
+with username:karaf and password:karaf
+
 # Support:
 
 Email to ming@katdc.com
@@ -28,8 +31,13 @@ install -s mvn:org.apache.openjpa/openjpa/2.1.1
 dynamic-import 196
 </pre>
 
-# Articles on Apache Karaf
+# Articles:
 
+## Apache Karaf
 http://karaf.apache.org/index/community/articles.html
 
+## Apache Camel
+http://camel.apache.org/articles.html
 
+## Apache Shiro
+http://shiro.apache.org/articles.html
