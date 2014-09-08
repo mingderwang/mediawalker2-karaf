@@ -40,3 +40,6 @@ http://camel.apache.org/articles.html
 
 ## Apache Shiro
 http://shiro.apache.org/articles.html
+
+## Hawt.io
+http://hawt.io/
