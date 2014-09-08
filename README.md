@@ -1,13 +1,16 @@
 # Usage:
 <pre>
 docker run -it -p 8181:8181 \
-       -v `pwd`:/mediawalker2/data \
+       -v `pwd`/deploy:/mediawalker2/deploy \
+       -v `pwd`/data:/mediawalker2/data \
        -w /mediawalker2/deploy \
        mingderwang/mediawalker2-karaf
 </pre>
 
 then, you can surf http://192.168.59.103:8181/hawtio
 with username:karaf and password:karaf
+
+Copy your OSGi bundles to `pwd`/deploy will install them automatically.
 
 # Support:
 
